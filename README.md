@@ -1,30 +1,73 @@
-# AI-Powered Teamwork & Leadership Coach
+# AI-Powered Teamwork & Leadership Coach for Engineering Education
+
+> **Project Status:** 🚧 In Development
+
+This repository contains the source code, documentation, and resources for our EDS 6397 Final Project at the University of Houston.
+
+Our goal is to develop an AI-powered teamwork and leadership coach that provides engineering students with personalized, evidence-based coaching using Retrieval-Augmented Generation (RAG) and agent-based AI.
+
+---
 
 ## Overview
 
-This project develops an AI-powered coaching system for engineering student teams at the University of Houston. The system uses Retrieval-Augmented Generation (RAG) and multiple AI agents to provide personalized, evidence-based coaching that helps students improve teamwork, collaboration, leadership, and communication.
+Engineering projects are rarely completed by individuals. Successful engineering requires effective communication, collaboration, leadership, and teamwork. However, many student teams struggle with communication breakdowns, accountability, unresolved conflicts, and unclear expectations.
 
-Unlike a generic chatbot, every coaching recommendation is grounded in validated research to reduce hallucinations and improve trustworthiness.
+This project explores how Generative AI can provide scalable, personalized coaching that helps engineering students develop these essential professional skills.
+
+Unlike a generic chatbot, our system grounds every coaching recommendation in validated research to reduce hallucinations and improve trustworthiness.
 
 ---
 
 ## Problem Statement
 
-Engineering teams frequently struggle with communication breakdowns, unresolved conflicts, accountability issues, unclear expectations, and leadership challenges. Although personalized coaching can improve these skills, providing expert coaching to every student team is difficult because it requires significant time, expertise, and resources.
+Personalized coaching is valuable but difficult to provide at scale because it requires significant time, expertise, and continuous engagement.
 
-Our goal is to build an AI-powered coaching system that delivers scalable, personalized, and evidence-based guidance for engineering students.
+Our solution is an AI-powered coaching platform that helps engineering student teams by:
+
+- Understanding student reflections
+- Diagnosing teamwork challenges
+- Retrieving evidence from trusted sources
+- Generating personalized coaching recommendations
+- Validating responses before presenting them to users
 
 ---
 
 ## Project Scope
 
-The project focuses on developing an intelligent coaching platform that:
+The system is designed to support engineering students throughout their teamwork experience by providing evidence-based guidance for:
 
-- Understands student reflections
-- Diagnoses teamwork challenges
-- Retrieves supporting evidence from trusted sources
-- Generates personalized coaching recommendations
-- Validates responses before presenting them to users
+- Communication
+- Collaboration
+- Leadership
+- Accountability
+- Conflict Resolution
+- Team Effectiveness
+
+---
+
+## System Architecture
+
+```
+Student Reflection
+        │
+        ▼
+Reflection Interface
+        │
+        ▼
+Diagnosis Agent
+        │
+        ▼
+Evidence Retrieval Agent (RAG)
+        │
+        ▼
+Advice Generation Agent
+        │
+        ▼
+Validation Layer
+        │
+        ▼
+Personalized Coaching Recommendation
+```
 
 ---
 
@@ -32,10 +75,11 @@ The project focuses on developing an intelligent coaching platform that:
 
 - Multi-Agent AI Architecture
 - Retrieval-Augmented Generation (RAG)
-- Personalized Coaching
-- Evidence-Based Recommendations
+- Evidence-Based Coaching
+- Personalized Recommendations
 - Hallucination Reduction
 - Research-Grounded Responses
+- Performance Monitoring
 
 ---
 
@@ -44,8 +88,7 @@ The project focuses on developing an intelligent coaching platform that:
 - Python
 - Large Language Models (LLMs)
 - Retrieval-Augmented Generation (RAG)
-- LangChain / Agentic AI
-- Vector Database
+- Agent-Based AI
 - Git & GitHub
 
 ---
@@ -53,12 +96,17 @@ The project focuses on developing an intelligent coaching platform that:
 ## Repository Structure
 
 ```
-src/
-agents/
-data/
-docs/
-report/
-README.md
+.
+├── README.md
+├── requirements.txt
+├── docs/
+├── data/
+├── agents/
+├── src/
+├── monitoring/
+├── evaluation/
+├── tests/
+└── report/
 ```
 
 ---
@@ -73,7 +121,7 @@ README.md
 - System Performance Monitoring
 
 ### Francisco
-- Advice Generation Agent (with personalization, if possible)
+- Advice Generation Agent
 
 ### Alex
 - Project Management
@@ -92,13 +140,28 @@ README.md
 
 ## Expected Outcome
 
-The final system will provide engineering students with personalized, research-grounded coaching that supports the development of teamwork, collaboration, leadership, communication, and decision-making skills while minimizing unsupported AI-generated advice.
+The final system aims to provide engineering students with personalized, research-grounded coaching that improves teamwork, leadership, communication, collaboration, and decision-making while minimizing unsupported AI-generated advice.
 
 ---
 
 ## Future Work
 
-- Improve personalization using long-term user profiles
 - Expand the knowledge base with additional validated research
-- Support deployment in real educational environments
+- Improve personalization using long-term user profiles
+- Deploy the system in educational environments
 - Evaluate coaching quality through human assessment
+- Enhance system scalability and monitoring
+
+---
+
+## Course Information
+
+**Course:** EDS 6397 – Generative AI Final Project
+
+**Institution:** University of Houston
+
+---
+
+## License
+
+This repository was created as part of the EDS 6397 course project at the University of Houston.
